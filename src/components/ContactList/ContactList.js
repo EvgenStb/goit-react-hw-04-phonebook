@@ -4,8 +4,8 @@ import ContactItem from 'components/ContactItem/ContactItem';
 
 function ContactList({ contacts, filter, onClick }) {
   let handledContacts = contacts;
-  if (handledContacts.lenght === null){
-    return
+  if (contacts.lenght === null) {
+    return;
   }
   const filterReq = filter.toLowerCase();
   if (isNaN(filter)) {

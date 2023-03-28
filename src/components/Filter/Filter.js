@@ -8,7 +8,7 @@ const Filter = ({ filter, onChange }) => {
       <input
         type="text"
         onChange={onChange}
-        value={filter.value}
+        value={filter}
         name={!Number(filter) ? 'name' : 'number'}
       />
     </>
